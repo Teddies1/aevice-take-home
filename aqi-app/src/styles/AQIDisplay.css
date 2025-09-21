@@ -1,0 +1,156 @@
+.aqi-display {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.aqi-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.city-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #333;
+  margin: 0 0 1rem 0;
+}
+
+.aqi-main {
+  display: inline-block;
+  padding: 1rem;
+  border: 3px solid;
+  border-radius: 12px;
+  background-color: #fafafa;
+}
+
+.aqi-value {
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.aqi-category {
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.main-pollutant {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+.main-pollutant h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.pollutant-name {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.health-recommendation {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background-color: #e3f2fd;
+  border-radius: 8px;
+  border-left: 4px solid #2196f3;
+}
+
+.health-recommendation h3 {
+  margin: 0 0 0.75rem 0;
+  font-size: 1.1rem;
+  color: #1976d2;
+}
+
+.health-recommendation p {
+  margin: 0;
+  line-height: 1.5;
+  color: #333;
+}
+
+.pollutant-details h3 {
+  margin: 0 0 1rem 0;
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.pollutant-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 0.75rem;
+}
+
+.pollutant-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem;
+  background-color: #f8f9fa;
+  border-radius: 6px;
+  border: 1px solid #e9ecef;
+}
+
+.pollutant-label {
+  font-weight: 600;
+  color: #495057;
+}
+
+.pollutant-value {
+  font-weight: 500;
+  color: #333;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .aqi-display {
+    margin: 1rem;
+    padding: 1rem;
+  }
+  
+  .aqi-value {
+    font-size: 2.5rem;
+  }
+  
+  .city-name {
+    font-size: 1.25rem;
+  }
+  
+  .pollutant-grid {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+  
+  .pollutant-item {
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .aqi-main {
+    padding: 0.75rem;
+  }
+  
+  .aqi-value {
+    font-size: 2rem;
+  }
+  
+  .aqi-category {
+    font-size: 0.875rem;
+    padding: 0.375rem 0.75rem;
+  }
+}
